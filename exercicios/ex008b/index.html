@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+        <h1>Outras formatações</h1>
+            
+            <h2>Código-fonte</h2>
+                <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem Javascript.</p> <!-- Tag para ajustar o espaçamento das letras, deixando todas iguais (Facilitando na leitura de códigos).-->
+        <pre> 
+            <code>
+    num = int(input('Digite um número')) <!-- Para reposicionar várias linhas, é só selecionar elas e usar TAB pra avançar e SHIFT + Tab para recuar-->
+    if num % 2 == 0
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR')
+    print('fim do programa')
+            </code>
+        </pre> <!-- Tag PRE usada para levar o código exatamente como está no VSCode, incluindo os espaçamentos(indentação).-->
+           
+            <h2>Citações</h2>
+                <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q> citação destacada usando a tag &lt;q&gt;. </p>
+           
+            <h2>Citações completas</h2>
+                <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+                    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&newbks=0&hl=pt-BR&source=newbks_fb&redir_esc=y">
+                Sett é o melhor personagem do jogo League of Legends, definitivamente um dos campeões já feitos. <!-- Blockquote é usada para escrever uma frase de um autor, aparece com uma quebra de linha e  deslocada para a direita no Site. Cite é para colocar o link da fonte.-->
+                    </blockquote>
+            
+            <h2>Abreviações</h2>
+                <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p> <!-- TAG abbr usada em siglas, para dá aos leitores os nomes completos, aparece ao passar o cursor em cima da sigla.-->
+            
+            <h2>Texto invertido</h2>
+                <p><bdo dir="rtl">Estou me divertindo estudando HTML e CSS</bdo></p>  <!-- bdo usasa para inverter o texto, rlt de right to left, e ltr de left to right.-->
+    
+</body>
+</html>

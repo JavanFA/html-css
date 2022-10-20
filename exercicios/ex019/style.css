@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* ID EM HTML É  # EM CSS 
+   CLASS EM HTML É . EM CSS*/
+body {
+    background-color: #72FF8F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1b692b;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #32703F;
+    color: white;
+}
+
+h2 {
+    color: #358b46;
+}
+
+.basico {
+    color: #358b46;
+    font-weight: bold;
+}
+
+.intermediario {
+    color: #7e8b35;
+}
+
+.avancado {
+    color: #8b3535;
+}
