@@ -1,0 +1,299 @@
+﻿h1< título
+p < parágrafo
+hr < linha horizontal
+br < quebra de linha
+img < imagem
+link:favcon < ícone da página
+address < endereço
+strong < negrito
+em < itálico
+mark < marca texto
+small < texto pequeno
+del < marcar o texto, como excluído
+ins < texto sublinhado
+sup < texto sobrescrito ¹²³
+sub < texto subscrito ₂ 
+code < iguala o espaçamento das letras, deixa padronizadas
+pre < usada para contar até o espaçamento do programa
+ex: o código vai com os espaços junto.
+	sad
+          sad
+	  saddsa
+	dsadsad	
+q < texto entre aspas
+blockquote < texto com quebra de linha deslocado para a direita, usada para citações de autores
+abbr < abreviações, o significado aparece ao passar o cursor em cima
+bdo < texto invertido
+bdo dir="rtl" right to left, texto da direita pra esquerda
+bdo dir="ltr" left to right, texto da esquerda pra direita
+
+ol < delimita uma lista ordenada
+tipos de marcadores para listar ordenadas: 1, A, a, I e i
+1 < valor padrao, lista numerada
+A < lista alfabética maiúscula
+a < lista alfabética minúscula
+I < lista com algarismos romanos maiúsculos
+i < lista com algarismos romanos minúsculos
+para adicionar um tipo botamos <ol type="I" start=5 esse start é para
+indicar qual o número/letra que a lista vai começar
+
+ul < delimita uma lista nao ordenada
+li < adicionar um item na lista ordenada ou nao ordenada
+marcadores de listas nao ordenadas: disc, circle e square
+disc < padrão, uma bola preta totalmente pintada
+circle < uma bola com bordas pretas
+square < um quadrado totalmente preto
+
+dl < delimita uma lista de definiçoes
+dt < adicionar um termo de definição
+dd < descrição da definição
+
+É POSSÍVEL MESCAR LISTAS ORDENADAS/NÃO ORDENADAS E DE DEFINIÇÃO
+
+LINKS
+a < adicionar link
+targe"_blank" 
+rel"external" esses dois são usados para criar uma nova aba ao clicar
+no link.  external = fora do meu site
+../ = para sair da pasta na hora de fazer um link 
+target "_self" propria página
+rel "unfollow" que voce nao dá aval para essa página
+hreflang = linguagem da página
+
+imagens dinâmicas
+
+picture < deixa colocar mais de uma source de imagem
+source media = permite colocar a imagem menor caso a página nao
+carregue a imagem maior
+----IMPORTANTE----
+lembrar de trocar min-width; para max-width sempre, e colocar png
+dps de type="image/png"
+A MENOR IMAGEM SEMPRE TEM Q FICAR EM CIMA DAS OUTRAS NO CÓDIGO
+colocar sempre 50px a mais.
+
+Áudio
+audio < para adicionar áudio
+autoplay < para tocar o áudio automaticamente
+controls < para aparecer o play/pause no áudio
+loop < repete o áudio quando ele chega no final
+Formatos para ter compatibilidade em todos navegadores
+         MP3 - WAV - OGG
+types: audio/mpeg audio/wav audio/ogg
+source src < mesmo esquema do source media, permite adicionar outros
+formatos de áudio. a ordem importa e é de cima pra baixo
+
+Vídeo
+Formatos suportados pelos navegadores:
+	MP4 - M4V - OGv - WEBM
+types: video/mp4 video/mp4 video/ogg video/webm
+Video < adicionar vídeo
+widht < para mudar o tamanho do vídeo
+controls < play/pause
+poster < para adiconar uma tumbnail
+-------------------------------------------------------------------------------------------
+Regras em css
+@charset "UTF-8"; < para o css tankar acentuação, importante colocar
+ponto e vírgula no final.
+É POSSÍVEL ADICIONAR MAIS DEU UM LINK CSS EM UM HTML
+ex: link rel = style.css
+    link rel = extra.css
+é bom para fazer mudanças específicas em algumas páginas.
+NO MESMO ARQUIVO TBM É POSSÍVEL MISTURAR CSS INLINE, INTERNO
+E EXTERNO
+-------------------------------------------------------------------------------------------
+Cores em hexadecimal
+#000000
+R < os 2 primeiros digitos, representam o vermelho
+G < os 2 digitos do meio, representam o verde
+B < os 2  ultimos digitos, representam o azul
+Esses valores vão de 0 até F, sendo F o maior valor
+FF < 255
+0 1 2 3 4 5 6 7 8 9 A B C D E F 
+
+representação em rgb
+rgb (0, 0, 0 )
+red, green e blu. 
+valores vão de 0 a 255
+
+representação em hsl
+h < matriz
+s < saturação em %
+luminosidade em %
+valores vão de 0 a 100
+
+Círculo cromático
+
+12 cores principais
+primárias - azul amarelo vermelho
+secundárias - verde violeta e laranja
+terciárias - todo o resto 
+CORES TERCIÁRIAS SÃO UMA MISTURA DE COR PRIMÁRIA E SECUNDÁRIA
+O NOME DA PRIMÁRIA SEMPRE VEM PRIMEIRO
+EX: AMARELO ESVERDEADO, AZUL ESVERDEADO, AMARELO ALARANJADO, ETC.
+
+Cores frias: todas as cores do hemisfério esquerdo do círculo cromático
+violeta, azul arroxeado, azul, azul esverdeado, verde e amarelo esverdeado.
+
+Cores quente: hemisfério direito: amarelo, amarelo alaranjado, laranja
+vermelho alaranjado, vermelho e vermelho arroxeado.
+
+CORES COMPLETEMENTARES
+Cores que mais contrastam entre si. As cores opostas no círculo
+cromático. Ex: amarelo e violeta
+
+CORES ANÁLOGAs
+Cores harmoniosas, contraste muito fraco(Cores irmãs). As cores vizinhas
+no círculo cromático. Ex: violeta - azul arroxeado e vermelho arroxeado
+
+Misturar as 3 cores análogas com uma complementar serve para criar
+uma boa paleta de cores, mas com muito contraste.
+
+CORES ANÁLOGAS RELACIONADAS
+Cores harmoniosas, com um pouco mais de contraste. Duas cores vizinhas
+e uma cor pulando uma casa de distância no círculo cromático. 
+Ex: amarelo, amarelo alaranjado e vermelho alaranjado
+Azul, azul arroxeado e vermelho arroxeado
+
+CORES INTERCALADAS
+Cores com mais contraste. Uma casa de diferença entre cada uma delas no
+círculo cromático
+Ex: Amarelo, laranja e vermelho
+Verde, azul e violeta
+
+CORES TRIÁDICAS
+3 cores com 3 casas de distância no círculo cromático, formadno um triângulo
+Ex: Amarelo, vermelho e azul
+
+CORES EM QUADRADO
+4 cores com distância de 2 casas no círculo cromático, formando um quadrado
+Ex: amarelo, vermelho alaranjado, violeta e azul esverdeado.
+
+CORES TETRÁDICAS
+Cores em formato de retângulo, para conseguir isoo eu escolho uma cor
+pego a cor oposta a ela, e pego outra cor e faço mesmo
+Ex: Verde e azul, vermelho e laranja.
+Verde e azul esverdeado, vermelho e vermelho alaranjado.
+
+MONOCROMIA
+Trabalhar apenas com uma cor, só devemos mexer na saturação e luminosidade
+para conseguir variações. O famoso degradê
+Ex: Laranja
+
+Color.adobe.com
+
+modo de cores:
+rgb < para telas
+cmyk < para impressoras
+--------------------------------------------------------------------------------------------------------------------------------------------------
+CSS
+NO CSS O CÓDIGO QUE ESTÁ EM BAIXO É SEMPRE O LIDO
+POR EXEMPLO, SE TIVER 2 BACKGROUND BLUE E RED, O QUE ESTIVER EM BAIXO
+VAI VIRAR A COR DA PÁGINA
+--------------------------------------------------------------CAIXAS------------------------------------------------------------------
+TIPOS DE CAIXA: 
+BOX-LEVEL: Usa sempre 100% da tela do dispositivo, e tem que começar em uma nova linha.
+Ex de box-level: div, h1-h6, p, main, header, nav, article, aside, footer, form, video
+
+INLINE-LEVEL: Não usa 100% da tela, e não quebra uma linha para começar.
+Ex de inline-level: span, a, code, small, strong, em, sup-sub, label, button, input, select
+TAGS DE AGRUPAMENTO (Grouping Tags)
+header < agrupamento para cabeçalho
+main < agrupamento principal, para o conteúdo
+footer < agrupamento para rodapés
+section < agrupamento seção
+nav < navegação, normalmente onde vai os links
+article < artigo
+aside < algo relacionado ao assunto que ele está, article
+div < agrupamento genérico com quebra de linhas
+span < agrupamento genérico sem quebra de linhas
+----------------------------------------------------------------------------------------------------------------------------
+seletores no css:
+* < seletor universal, para todo o código
+#ID < único e tem o maior peso no css pra marcar usamos #id (exemplo
+#unico-1)
+class < segundo/ pra marcar no css usamos .class(nome da class) 
+exemplo: .corno
+element < body, p, etc.
+: < pseudo-classe, configuração de estado em html
+:: < pseudo-elemento
+> < Mostrar que uma tag está dentro da outra, exemplo: DIV > p {}
+root: usado para criar variáveis em CSS pricipalmente com cores, começa o nome da variavel com --
+----------------------------------------------------------------------------------------------------------------------------
+Algumas tags:
+width < largura
+Padding < espaçamento
+height < altura
+border < borda da caixa
+border-radius < arredondar as bordas
+border-image-source: url() < para adiconar uma imagem na borda
+border-image-slice < tamanho da imagem
+border-image-repeat < repetir a imagem da borda
+border-imagem: url() slice(valor) repeat <-------- shorthand da tag border-image
+padding < preenchimento entre o conteúdo e a borda (espaço interno)
+outline < contorno, espaço entre a borda e o tamanho da caixa (espaço externo)
+margin < margem (espaço externo)
+margin < onde a caixa vai ficar, exemplo o main nomeio da tela
+margin auto <  centraliza a caixa automaticamente
+margin: -10px -10px 0px -10px; < pra fazer uma box se encaixar na outra
+------------------------------------------------------------------------
+box-shadow < adiciona sombras as caixas (main,etc), são 4 parâmetros
+o 1º é deslocamento horizontal, o 2º é deslocamento vertical, o 3º é o espalhamento
+da sombra, e o 4º é a cor.
+ex: 10px 10px 10px black
+FONTES------------------------------------------------------------------
+text-align < onde o texto vai ficar
+font-family < fonte
+text-shadow < sombra aos textos
+font-size < altura da fonte
+font-weight < peso da fonte
+text-decoration: underline; < sublinha o texto
+font-style < colocar a fonte em itálico etc
+text-align < alinhar o texto, na esquerda, direita, centro ou justificado
+text-indent < colocar o espaço no início dos parágrafos
+line-height < espaço entre as linhas
+list-style-position: aside/outside < posiciona a bolinha da lista, dentro ou fora de uma caixa
+list-style-type < para mudar a bolinha de uma lista, se for um emoji é só colocar o código do emoji
+ex: '\2714' E PARA ADICONAR UM ESPAÇO, A GENTE COLOCAR \00A0 antes ou depois do código do emoji
+columns < números de colunas de uma lista
+content < adicionar emoji em algum lugar do código
+---------------------------------------------------------------------------------------------------------------------------------------------------
+PARA CONSEGUIR MUDAR WEIGHT, DECORATION E STYLE, A FONTE DEVE
+TER SUPORTE PARA AS 3 FORMAS, NEGRITO ITALICO E SUBLINHADO
+---------------------------------------------------------------------
+SHORTHAND < RESUMIR TODAS CONFG DE FONTES EM UMA TAG
+ORDEM:
+FONT-STYLE -> FONT-WEIGHT -> FONT-SIZE -> FONT-FAMILY
+EX:
+FONT: ITALIC BOLDER 3EM 'wORK SANS', SANS-SEFIRF;
+---------------------------------------------------------------------
+CTRL + SHIFT + P PARA ENVELOPAR UMA FRASE EM UMA TAG :D
+
+ADICIONANDO FONT EXTERNA NO CÓDIGO
+
+Começar baixando a fonte e colocando ela na pasta do código
+depois digitar dentro do style:
+ 
+@font-face {
+	font-family ;
+	src: url('nome do arquivo') format(OPENTYPE/TRUETYPE/ETC);
+}
+
+		é possível colocar mais de uma url, colocando
+		um arquivo otf e um ttf para ter suporte em todos
+		os navegadores
+formatos:
+opentype < OTF
+truetype < TTF 
+embedded-opentype <
+truetype-att < APPLE ADVANCED TYPOGRAPHY
+svg < 
+
+
+
+
+
+
+
+
+
+
