@@ -288,10 +288,12 @@ embedded-opentype <
 truetype-att < APPLE ADVANCED TYPOGRAPHY
 svg < 
 
+IMAGEM DE FUNDO
 
-
-
-
+Background-imagem: url() < Adicionar uma imagem
+background-size < tamanho da imagem do fundo
+background-repeat < repetir ou não a imagem de fundo
+background-position < posição da imagem do fundo
 
 
 
