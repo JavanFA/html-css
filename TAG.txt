@@ -219,7 +219,7 @@ element < body, p, etc.
 > < Mostrar que uma tag está dentro da outra, exemplo: DIV > p {}
 root: usado para criar variáveis em CSS pricipalmente com cores, começa o nome da variavel com --
 ----------------------------------------------------------------------------------------------------------------------------
-Algumas tags:
+Algumas tags: Box
 width < largura
 Padding < espaçamento
 height < altura
@@ -288,14 +288,50 @@ embedded-opentype <
 truetype-att < APPLE ADVANCED TYPOGRAPHY
 svg < 
 
-IMAGEM DE FUNDO
+BACKGROUND
 
+background-color < cor de fundo
 Background-imagem: url() < Adicionar uma imagem
 background-size < tamanho da imagem do fundo
 background-repeat < repetir ou não a imagem de fundo
 background-position < posição da imagem do fundo
+background-attachment < a imagem de fundo se mover no scroll ou ficar fixada na tela
+-------- SHORTHAND PARA A TAG BACKGROUND ------------
+color > image > position > repeat > "size" = o size ainda não funciona > attachment
+ex:
+background: black url('imagem/wallpaper02.png') center center no-repeat cover fixed;
 
+Centralizar uma imagem dentro de uma div:
 
+<section>
+	<article>
 
+	</article>
+</section>
 
+para fazer isso, usamos em css:
 
+section {
+         background-image: url(img/target001.png);
+         background-size: 100% 100%;
+
+         position: relative;
+         height: 94vh;
+         padding: 10px;
+         background-color: purple;
+}
+
+article {
+         background-image: url(img/target001.png);
+         background-size: 100% 100%;
+
+         position: absolute;
+         height: 200px;
+         width: 400px;
+         background-color: yellow;
+
+         left: 50%;
+         top: 50%;
+
+         transform: translate(-50%, -50%); <- esse transform que faz a magia acontecer
+}
