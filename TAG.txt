@@ -335,3 +335,7 @@ article {
 
          transform: translate(-50%, -50%); <- esse transform que faz a magia acontecer
 }
+
+
+
+SEGURANDO ALT VOCÊ CONSEGUE SELECIONAR MAIS DE UMA LINHA :D!
