@@ -225,6 +225,7 @@ Padding < espaçamento
 height < altura
 border < borda da caixa
 border-radius < arredondar as bordas
+border-collapse < juntar ou separar as bordas
 border-image-source: url() < para adiconar uma imagem na borda
 border-image-slice < tamanho da imagem
 border-image-repeat < repetir a imagem da borda
@@ -341,5 +342,17 @@ article {
 
 
 SEGURANDO ALT VOCÊ CONSEGUE SELECIONAR MAIS DE UMA LINHA :D!
+colocando * você consegue colocar mais de uma tag de uma evz
+ex: li*3 vai aparecer 3 li
+<li> </li>
+<li> </li>
+<li> </li>
 
+TABELAS:
+
+Hierarquia de Tabelas
+table < tabela
+	Table row <tr> < linha de tabela
+		table header <th> < cabeçalho da tabela
+		table data <td> < dados da tabela
 
