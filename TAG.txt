@@ -247,9 +247,11 @@ text-shadow < sombra aos textos
 font-size < altura da fonte
 font-weight < peso da fonte
 text-decoration: underline; < sublinha o texto
+font-variant < mudanças na fontes, small-caps transforma em maiúsculas mas organizadas
 font-style < colocar a fonte em itálico etc
 text-align < alinhar o texto, na esquerda, direita, centro ou justificado
 text-indent < colocar o espaço no início dos parágrafos
+text-transform < transforma as letras em maiúsculas ou minúsculas
 line-height < espaço entre as linhas
 list-style-position: aside/outside < posiciona a bolinha da lista, dentro ou fora de uma caixa
 list-style-type < para mudar a bolinha de uma lista, se for um emoji é só colocar o código do emoji
@@ -339,3 +341,5 @@ article {
 
 
 SEGURANDO ALT VOCÊ CONSEGUE SELECIONAR MAIS DE UMA LINHA :D!
+
+
