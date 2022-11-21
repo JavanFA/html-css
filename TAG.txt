@@ -215,6 +215,8 @@ class < segundo/ pra marcar no css usamos .class(nome da class)
 exemplo: .corno
 element < body, p, etc.
 : < pseudo-classe, configuração de estado em html
+ex < hover, nth-child()
+nth-child(2n, odd(ímpar), ou even(par)) para fazer efeito zebrado
 :: < pseudo-elemento
 > < Mostrar que uma tag está dentro da outra, exemplo: DIV > p {}
 root: usado para criar variáveis em CSS pricipalmente com cores, começa o nome da variavel com --
@@ -360,6 +362,8 @@ table < tabela
 Anatomia de tabelas grandes
 
 Table
+     
+     Caption < legenda
      Table header <thead>
 	Table row, table header, table data
 
@@ -369,4 +373,24 @@ Table
      Table Footer <tfoot>
 	table row, table header, table data
 
+Scopes do TH:
+Col: Na mesma coluna, ou seja, os td estão abaixo.
+Row: Na mesma linha, os td estão do lado.
+
+fixando a legenda de uma tabela na tela:
+table {
+	position:relative
+}
+
+thead > tr > th {
+	position: sticky
+	top: 0
+	background color: //
+}
+
+---------------------------------------------------------------------------------------------------------
+MESCLAGEM DE CÉLULAS:											|
+colspan < mesclagem de coluna, uma célular ocupar 2 colunas 						|
+rowspan < mesclagem de linha, uma célular ocupar 2 linhas						|
+---------------------------------------------------------------------------------------------------------
 
