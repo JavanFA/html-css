@@ -357,3 +357,16 @@ table < tabela
 		table header <th> < cabeçalho da tabela
 		table data <td> < dados da tabela
 
+Anatomia de tabelas grandes
+
+Table
+     Table header <thead>
+	Table row, table header, table data
+
+     Table Body <tbody>
+	table row, table header, table data
+
+     Table Footer <tfoot>
+	table row, table header, table data
+
+
