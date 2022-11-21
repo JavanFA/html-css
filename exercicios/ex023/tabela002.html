@@ -13,6 +13,33 @@
         table {
             width: 700px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            background-color: rgb(53, 53, 53);
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(53, 53, 53);
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         td, th {
@@ -24,23 +51,20 @@
             text-align: center;
         }
 
-        thead {
-            background-color: gray;
-            color: white;
-        }
     </style>
 </head>
 <body>
     <h1>Tabelas grandes</h1>
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População (2010)</th>
-                <th>População (2021)</th>
-                <th>% da pop. total</th>
-                <th>País comparável (habitantes)</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População (2010)</th>
+                <th scope="col">População (2021)</th>
+                <th scope="col">% da pop. total</th>
+                <th scope="col">País comparável (habitantes)</th>
             </tr>
         </thead>
 
