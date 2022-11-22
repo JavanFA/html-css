@@ -394,3 +394,15 @@ colspan < mesclagem de coluna, uma célular ocupar 2 colunas 						|
 rowspan < mesclagem de linha, uma célular ocupar 2 linhas						|
 ---------------------------------------------------------------------------------------------------------
 
+TAG COLGROUP:
+Usada para selecionar uma coluna inteira em uma tabela
+<colgroup>
+<col>   <- número de colunas
+<col class="cgrupo"> ou class="cgrupo" span="2" para funcionar em duas linhas
+<colgroup>
+
+TABELAS RESPONSIVAS:
+Para fazer a tabela ser responsiva, envelopamos toda a Table numa Div. Então, configuramos no style um
+overflow-x: auto; para só a tabela ter rolagem lateral
+overflow-y: é verticalmente
+e tem o overflow: ; que são os dois
