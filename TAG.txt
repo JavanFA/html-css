@@ -216,9 +216,12 @@ exemplo: .corno
 element < body, p, etc.
 : < pseudo-classe, configuração de estado em html
 ex < hover, nth-child()
+not() < não selecionar o item dentro dos parênteses
 nth-child(2n, odd(ímpar), ou even(par)) para fazer efeito zebrado
 :: < pseudo-elemento
 > < Mostrar que uma tag está dentro da outra, exemplo: DIV > p {}
++ < Selecionar o item mais próximo de um elemento. Ex: H1 + p {} (o primeiro P depois do h1 será selecionado)
+~ < Selecionar os itens depois de um elemento. Ex: h1 ~ p {} (todos os P dps do h1 serão selecionados)
 root: usado para criar variáveis em CSS pricipalmente com cores, começa o nome da variavel com --
 ----------------------------------------------------------------------------------------------------------------------------
 Algumas tags: Box
